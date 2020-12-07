@@ -1,0 +1,181 @@
+
+/*img {*/
+/*    box-sizing: border-box;*/
+/*    -moz-box-sizing: border-box;*/
+/*    width:100%;*/
+/*    height:auto;*/
+/*    padding: 1rem 0 1rem 0;*/
+/*    background-color: #FFF;*/
+/*}*/
+
+
+/* ------------------------ LOGO ------------------------ */
+header{
+    margin-top: 2.4em;
+}
+body>header>h1{
+    z-index: 2;
+}
+body>header>h1:after{
+    content: url("../../img/illustrations/design_perso/logo/LOGO.svg");
+    position: absolute;
+    top: 0.7em;
+    left: 1.2em;
+}
+
+body>header>h1:before{
+    content: url("../../img/illustrations/design_perso/accueil/tracé_accueil_01.svg");
+    position: absolute;
+    top: -1em;
+    right: 3em;
+    width: 510px;
+    height: 507px;
+}
+
+
+/* ------------------------ TAGLINE ------------------------ */
+.tagline{
+    position: absolute;
+    margin: 50px 0 0 20px
+}
+.tagline h2{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    text-align: right;
+    margin: 0;
+}
+
+
+/* ------------------------ CAROUSEL ------------------------ */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul.caroussel-items{
+    list-style: none;
+    padding: 20px 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+li.caroussel-items{
+    flex: 1 0 220px;
+    margin-left: 20px;
+    scroll-snap-align: center;
+}
+
+img.caroussel-items{
+    opacity: 50%;
+}
+
+
+/* ------------------------ INTRODUCTION ------------------------ */
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    background-image: url("../../img/images_illustrations/visuels/feuillerouge.png");
+}
+
+p{
+    margin: 1.2em;
+}
+
+body>article>p{
+    width: 50%;
+}
+
+
+/* ------------------------ TWEETS ------------------------ */
+.tweet h3{
+    color: #F8F2F0;
+    background-color: #BA5050;
+    padding: 10px 0 10px 0;
+}
+
+.tweet p{
+    padding: 10px 0 10px 0;
+    font-size: 0.9em;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+}
+
+.legende{
+    padding: 5px;
+    color: white;
+    background-color: #E6D5D0;
+    display: inline-block;
+    font-size: 0.7em;
+    font-family: "Poppins Light", sans-serif;
+    font-style: normal;
+}
+
+.tweet h2{
+    background-image: url("../../img/illustrations/design_perso/accueil/tracé_accueil_03.svg");
+    background-repeat: repeat-x;
+    padding: 50px;
+    background-color: #F8F2F0;
+    display: inline-block;
+}
+
+.tweet img{
+    display: inline-block;
+}
+
+
+/* ------------------------ FOOTER ------------------------ */
+footer{
+    background-image: url("../../img/illustrations/design_perso/tracé_footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.footer-gauche{
+    display: table-cell;
+    padding: 0 1em;
+    vertical-align: top;
+}
+
+.footer_gauche a img{
+    vertical-align: top;
+}
+
+.footer_droite{
+    display: table-cell;
+    padding-right: 1em;
+}
+
+.footer_droite p:nth-of-type(1){
+    display: inline-block;
+    margin: 0;
+    padding: 0 3.5em 0 1em;
+    border: 1px solid #E6D5D0;
+    border-radius: 0.2em;
+}
+
+.footer_droite p:nth-of-type(2){
+    display: inline-block;
+    margin: 0;
+    padding: 0 0.5em;
+    color: white;
+    background-color: #BA5050;
+    border-radius: 0.2em;
+}
+
+
+footer>p{
+    color: #BA5050;
+    opacity: 50%;
+    font-size: 0.9em;
+}
+
+footer h4{
+    color: #BA5050;
+    font-size: 0.8em;
+}

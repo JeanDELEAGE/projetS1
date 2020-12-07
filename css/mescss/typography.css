@@ -8,5 +8,20 @@ body{
     font-family: "Poppins Medium", sans-serif;
     font-size: 1.6rem;
     line-height: 1.6;
-    margin: 0 20px;
+    font-variant: normal;                               /* variante de police */
+    font-weight: normal;
+    color: #707070;
+}
+
+h1,h2,h3{
+    color: #A92424;
+}
+/* Logo */
+body>header>h1:first-of-type{
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+p{
+    color: #797979;
 }
