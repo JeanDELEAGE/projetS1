@@ -9,29 +9,57 @@
 /*}*/
 
 
-/* ------------------------ LOGO ------------------------ */
-header{
+/* ------------------------ ENTETE - FIL ARIANNE ------------------------ */
+.accueil header{
     margin-top: 2.4em;
 }
-body>header>h1{
-    z-index: 2;
+
+.article header{
+    background-image: url("../../img/images_illustrations/images_her/her_article_01.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-body>header>h1:after{
+
+.fil-arianne p:first-of-type:before{
+    content: url("../../img/images_interface/navigation/home.svg");
+    margin-right: 5px;
+
+}
+
+/* ------------------------ LOGO ------------------------ */
+
+.logo01:after{
     content: url("../../img/illustrations/design_perso/logo/LOGO.svg");
     position: absolute;
     top: 0.7em;
     left: 1.2em;
 }
 
-body>header>h1:before{
+.logo02{
+    display: inline-block;
+    text-indent: -9999px;
+    content: url("../../img/illustrations/design_perso/logo/ACCUEIL - HEADER - Logo.svg");
+    position: absolute;
+    top: 0;
+    left: 1.2em;
+}
+
+.logo01:before{
     content: url("../../img/illustrations/design_perso/accueil/tracé_accueil_01.svg");
     position: absolute;
     top: -1em;
     right: 3em;
     width: 510px;
     height: 507px;
+    display: block;
+    /*mix-blend-mode: luminosity;*/
 }
 
+.nav-bas{
+    display: block;
+    margin: 0 auto;
+}
 
 /* ------------------------ TAGLINE ------------------------ */
 .tagline{
@@ -46,31 +74,6 @@ body>header>h1:before{
 }
 
 
-/* ------------------------ CAROUSEL ------------------------ */
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-ul.caroussel-items{
-    list-style: none;
-    padding: 20px 0;
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-
-li.caroussel-items{
-    flex: 1 0 220px;
-    margin-left: 20px;
-    scroll-snap-align: center;
-}
-
-img.caroussel-items{
-    opacity: 50%;
-}
-
-
 /* ------------------------ INTRODUCTION ------------------------ */
 
 h3{
@@ -79,27 +82,80 @@ h3{
     align-items: center;
 }
 
-article{
-    background-image: url("../../img/images_illustrations/visuels/feuillerouge.png");
+/*.accueil>article{*/
+/*    background-image: url("../../img/images_illustrations/visuels/feuillerouge02.png");*/
+/*    background-position: right center;*/
+/*    background-size: contain;*/
+/*    background-repeat: no-repeat;*/
+
+/*}*/
+
+.accueil>article img{
+    float: right;
 }
 
-p{
-    margin: 1.2em;
+/* ------------------------ TABLE DES MATIERES ------------------------ */
+.table-des-matieres{
+    background-image: url("../../img/illustrations/design_perso/articles/article_01/tracé_article_02.svg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: repeat-x;
 }
 
-body>article>p{
-    width: 50%;
+.puces{
+    display: table-cell;
+    vertical-align: bottom;
+    position: absolute;
+    left: -0.8em;
+    margin-top: 10px;
 }
 
+.puces a{
+    margin: -21px;
+    padding: 0;
+}
+
+.chapter{
+    display: table-cell;
+}
+
+.chapter a{
+    margin-left: 20px;
+}
+
+.table-des-matieres a{
+    padding: 10px 30px 30px 10px;
+    display: block;
+}
+
+
+/* ------------------------ VISUELS + LEGENDE CAROUSEL ------------------------ */
+.visuel{
+    display: table-cell;
+}
+
+.visuel img{
+    margin-left: 10px;
+}
 
 /* ------------------------ TWEETS ------------------------ */
 .tweet h3{
     color: #F8F2F0;
     background-color: #BA5050;
     padding: 10px 0 10px 0;
+    margin: 0;
 }
 
-.tweet p{
+.tweet h1{
+    margin: -29px 0 0 0;
+    color: #BA5050;
+    font-size: 3em;
+    line-height: 1em;
+    position: absolute;
+    left: -18px;
+}
+
+.tweet-text{
     padding: 10px 0 10px 0;
     font-size: 0.9em;
     font-family: Poppins, sans-serif;
@@ -107,27 +163,68 @@ body>article>p{
 }
 
 .legende{
-    padding: 5px;
+    margin:  -15px 0 0 0;
+    padding: 5px 5px 5px 35px;
+    width: 185px;
     color: white;
     background-color: #E6D5D0;
     display: inline-block;
     font-size: 0.7em;
     font-family: "Poppins Light", sans-serif;
     font-style: normal;
+    text-align: right;
 }
 
-.tweet h2{
+.tweet_her,
+.tweet_pollution,
+.tweet_solutions{
+    margin-bottom: 40px;
+}
+
+.tweet_element h2{
+    margin: 0;
+}
+
+.tweet_element{
+    display: flex;
+}
+
+.buttonR{
     background-image: url("../../img/illustrations/design_perso/accueil/tracé_accueil_03.svg");
     background-repeat: repeat-x;
     padding: 50px;
     background-color: #F8F2F0;
-    display: inline-block;
 }
 
-.tweet img{
-    display: inline-block;
+.image-01,
+.image-02,
+.image-03{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-indent: -9999px;
+    width: 60vw;
+    height: auto;
 }
 
+.image-01{
+    background-image: url("../../img/images_illustrations/images_her/her_tweet.jpg");
+}
+
+.image-02{
+    background-image: url("../../img/images_illustrations/visuels/black_white_pollution.jpg");
+}
+
+.image-03{
+    background-image: url("../../img/images_illustrations/visuels/allumette_conso.jpeg");
+}
+
+
+/* ------------------------ VIDEO ------------------------ */
+.article article iframe{
+    max-width: 100%;
+
+}
 
 /* ------------------------ FOOTER ------------------------ */
 footer{

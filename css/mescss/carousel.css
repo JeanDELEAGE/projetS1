@@ -1,0 +1,52 @@
+
+/* ------------------------ CAROUSEL ------------------------ */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul.caroussel-items{
+    list-style: none;
+    padding: 20px 0 0 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+li.caroussel-items{
+    flex: 1 0 220px;
+    margin-left: 20px;
+    scroll-snap-align: center;
+}
+
+img.caroussel-items{
+    opacity: 50%;
+}
+
+.carousel h3{
+    border: 0.01px solid #707070 ;
+}
+
+.carousel p{
+    text-align: center;
+    margin: 0.5em;
+}
+
+.droite{
+    display: block;
+}
+
+.gauche{
+    display: block;
+    margin-right: 50px;
+}
+
+.film-infos{
+    display: flex;
+    border: 0.01px solid #707070;
+    margin: 0 1.4em;
+}
+
+p.gauche,p.droite{
+    text-align: left;
+}

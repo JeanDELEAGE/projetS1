@@ -15,13 +15,84 @@ body{
 
 h1,h2,h3{
     color: #A92424;
+    margin: 1.2em;
 }
+
+p{
+    color: #797979;
+    margin: 1.2em;
+    font-size: 1em;
+}
+
+/* ------------------------ NORMALIZE ------------------------ */
+a{
+    text-decoration: none;
+    color: #707070;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ------------------------ ENTETE ------------------------ */
 /* Logo */
 body>header>h1:first-of-type{
     text-transform: uppercase;
     margin-left: 1rem;
 }
 
-p{
-    color: #797979;
+.titre-article{
+    padding: 5em 0 0 0 ;
+    mix-blend-mode: luminosity;
+}
+
+.titre-article h1{
+    font-size: 5em;
+    margin: 2em 0 0 0.3em ;
+    color: #D6C0A5;
+    text-transform: lowercase;
+    line-height: 1em;
+}
+
+.titre-article h2{
+    font-size: 1.2em;
+    margin: 0 4.2em 0 0;
+    color: #D6C0A5;
+    text-align: right;
+}
+
+.titre-article h2:nth-of-type(2){
+    padding-bottom: 80px;
+}
+
+/* fil d'arianne */
+
+.fil-arianne p{
+    font-family: "Poppins Light", sans-serif;
+    font-size: 0.6em;
+    display: inline-block;
+    padding: 5px 2px 5px 0;
+    margin: 1.2em 0 0 2em;
+}
+
+.fil-arianne span{
+    font-family: "Poppins SemiBold", sans-serif;
+    font-size: 1em;
+}
+
+/* ------------------------ TABLE DES MATIERES ------------------------ */
+
+.table-des-matieres h3{
+    letter-spacing: 8px;
+    margin: 1.2em 0;
+}
+
+
+.puces>li>a{
+    font-family: "Poppins SemiBold",sans-serif;
+    line-height: 1em;
+    color: #BA5050;
+    font-size: 4em;
+    margin-bottom: 10px;
+    display: block;
 }
