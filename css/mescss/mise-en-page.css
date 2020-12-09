@@ -14,11 +14,34 @@
     margin-top: 2.4em;
 }
 
-.article header{
-    background-image: url("../../img/images_illustrations/images_her/her_article_01.jpg") ;
+.article01 header,
+.article02 header,
+.article03 header,
+.article04 header,
+.article05 header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.article01 header{
+    background-image: url("../../img/images_illustrations/images_her/her_article_01.jpg") ;
+}
+
+.article02 header{
+    background-image: url("../../img/images_illustrations/visuels/suffering-tree.jpeg") ;
+}
+
+.article03 header{
+    background-image: url("../../img/images_illustrations/visuels/mac+phone.jpeg") ;
+}
+
+.article04 header{
+    background-image: url("../../img/images_illustrations/images_her/her_article_01.jpg") ;
+}
+
+.article05 header{
+    background-image: url("../../img/images_illustrations/images_her/her_article_01.jpg") ;
 }
 
 .fil-arianne p:first-of-type:before{
@@ -42,7 +65,7 @@
     content: url("../../img/illustrations/design_perso/logo/ACCUEIL - HEADER - Logo.svg");
     position: absolute;
     top: 0;
-    left: 1.2em;
+    left: 0.6em;
 }
 
 .logo01:before{
@@ -59,6 +82,14 @@
 .nav-bas{
     display: block;
     margin: 0 auto;
+}
+
+footer:before{
+    content: url("../../img/images_interface/navigation/arrow_up.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
 }
 
 /* ------------------------ TAGLINE ------------------------ */
@@ -92,7 +123,11 @@ h3{
 
 .accueil>article img{
     float: right;
+    height: 361px;
+    width: auto;
 }
+
+
 
 /* ------------------------ TABLE DES MATIERES ------------------------ */
 .table-des-matieres{
@@ -164,7 +199,7 @@ h3{
 
 .legende{
     margin:  -15px 0 0 0;
-    padding: 5px 5px 5px 35px;
+    padding: 5px 5px 5px 44px;
     width: 185px;
     color: white;
     background-color: #E6D5D0;
@@ -192,6 +227,7 @@ h3{
 .buttonR{
     background-image: url("../../img/illustrations/design_perso/accueil/tracé_accueil_03.svg");
     background-repeat: repeat-x;
+    background-position: center center;
     padding: 50px;
     background-color: #F8F2F0;
 }
@@ -203,7 +239,7 @@ h3{
     background-size: cover;
     background-position: center center;
     text-indent: -9999px;
-    width: 60vw;
+    width: 63vw;
     height: auto;
 }
 
@@ -228,9 +264,10 @@ h3{
 
 /* ------------------------ FOOTER ------------------------ */
 footer{
-    background-image: url("../../img/illustrations/design_perso/tracé_footer.svg");
+    background-image: url("../../img/illustrations/design_perso/trace_footer01.svg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-position: bottom -100px right -125px;
+    padding-top: 40px;
 }
 
 .footer-gauche{
@@ -270,6 +307,7 @@ footer>p{
     color: #BA5050;
     opacity: 50%;
     font-size: 0.9em;
+    margin: 1em 1em 0 1em;
 }
 
 footer h4{

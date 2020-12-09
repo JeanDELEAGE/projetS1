@@ -41,27 +41,61 @@ body>header>h1:first-of-type{
     margin-left: 1rem;
 }
 
-.titre-article{
-    padding: 5em 0 0 0 ;
+.titre-article01,
+.titre-article02,
+.titre-article03,
+.titre-article04,
+.titre-article05{
+    padding: 1em 0 0 0 ;
+}
+
+.titre-article01{
     mix-blend-mode: luminosity;
 }
 
-.titre-article h1{
-    font-size: 5em;
-    margin: 2em 0 0 0.3em ;
-    color: #D6C0A5;
-    text-transform: lowercase;
-    line-height: 1em;
+.titre-article02{
+    mix-blend-mode: hard-light;
 }
 
-.titre-article h2{
-    font-size: 1.2em;
-    margin: 0 4.2em 0 0;
+.titre-article01 h1,
+.titre-article02 h1{
+    font-size: 5em;
+    margin: 2em 0 0 0.3em ;
+    line-height: 1em;
+}
+.titre-article02 h1{
+    font-size: 4em;
+}
+
+.titre-article02 h1:nth-of-type(2){
+    margin: 0 0 0 0.3em ;
+}
+
+.titre-article01 h1,
+.titre-article01 h2{
     color: #D6C0A5;
+    text-transform: lowercase;
+}
+
+/*.titre-article02 h1{*/
+/*    color: #A92424;*/
+/*}*/
+
+.titre-article01 h2{
     text-align: right;
 }
 
-.titre-article h2:nth-of-type(2){
+.titre-article01 h2,
+.titre-article02 h2,
+.titre-article03 h2,
+.titre-article04 h2,
+.titre-article05 h2 {
+    font-size: 1.2em;
+    margin: 0 4.2em 0 1.2em;
+
+}
+
+.titre-article01 h2:nth-of-type(2){
     padding-bottom: 80px;
 }
 
