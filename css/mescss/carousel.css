@@ -30,24 +30,26 @@ img.caroussel-items{
 
 .carousel p{
     text-align: center;
-    margin: 0.5em;
+    margin: 1em 0.5em 1em 0.5em;
 }
 
 .droite{
     display: block;
+    padding-left: 20px;
+    width: 141px;
 }
 
 .gauche{
     display: block;
-    margin-right: 50px;
+    margin-right: 10px;
+}
+
+.gauche>p{
+    font-weight: bold;
 }
 
 .film-infos{
     display: flex;
     border: 0.01px solid #707070;
     margin: 0 1.4em;
-}
-
-p.gauche,p.droite{
-    text-align: left;
 }

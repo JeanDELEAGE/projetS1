@@ -8,7 +8,9 @@
 /*    background-color: #FFF;*/
 /*}*/
 
-
+html{
+    overflow-x: hidden;
+}
 /* ------------------------ ENTETE - FIL ARIANNE ------------------------ */
 .accueil header{
     margin-top: 2.4em;
@@ -82,6 +84,7 @@
 .nav-bas{
     display: block;
     margin: 0 auto;
+    padding: 20px;
 }
 
 footer:before{
@@ -107,12 +110,6 @@ footer:before{
 
 /* ------------------------ INTRODUCTION ------------------------ */
 
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /*.accueil>article{*/
 /*    background-image: url("../../img/images_illustrations/visuels/feuillerouge02.png");*/
 /*    background-position: right center;*/
@@ -135,18 +132,19 @@ h3{
     background-size: cover;
     background-position: right center;
     background-repeat: repeat-x;
+    margin-bottom: 50px;
 }
 
 .puces{
     display: table-cell;
-    vertical-align: bottom;
+    vertical-align: top;
     position: absolute;
-    left: -0.8em;
+    left: -0.9em;
     margin-top: 10px;
 }
 
 .puces a{
-    margin: -21px;
+    margin: 0;
     padding: 0;
 }
 
@@ -156,21 +154,102 @@ h3{
 
 .chapter a{
     margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 10px 0 17px 10px;
 }
 
 .table-des-matieres a{
-    padding: 10px 30px 30px 10px;
     display: block;
 }
 
 
-/* ------------------------ VISUELS + LEGENDE CAROUSEL ------------------------ */
+
+/* ------------------------ VISUELS + LEGENDE CAROUSEL + EMPHASE ------------------------ */
 .visuel{
     display: table-cell;
 }
 
 .visuel img{
     margin-left: 10px;
+}
+
+.article03>.article>img:nth-of-type(3),
+.article03>.article>img:nth-of-type(5){
+    display: block;
+    margin: 0 auto 1em;
+}
+
+.emphase01{
+    display: block;
+    text-align: center;
+    background-color: #BA5050;
+}
+
+.emphase01 p{
+    font-family: "Poppins Light", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 1em;
+}
+
+.emphase02{
+    display: block;
+    text-align: center;
+    margin: 5em 1em 5em 1em;
+    border: 0.01px solid #707070;
+}
+
+.emphase02::before{
+    content: url("../../img/illustrations/design_perso/articles/article_03/plus.svg");
+    position: absolute;
+    left: -0.8em;
+
+}
+
+.emphase02 p{
+    font-family: "Poppins Light", sans-serif;
+}
+
+/* ------------------------ CHAPEAU ------------------------ */
+
+.article02>.article>p:nth-of-type(1)::before{
+    content: url("../../img/images_illustrations/visuels/CNRS.svg.png");
+    background-position: center center;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ------------------------ FLEX ELEMENT ------------------------ */
+.flex{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.flex p{
+    flex-basis: 50%;
+}
+
+/*.element-flex{*/
+/*    flex: auto;*/
+/*}*/
+
+.flex-img{
+    width: 268px;
+    height: auto;
+    border-radius: 60px;
+}
+
+.flex-img:nth-of-type(1){
+    position: absolute;
+    right: -105px;
+}
+
+.flex-img:nth-of-type(2){
+    /*position: absolute;*/
+    /*left: -105px;*/
+    /*top: 105px;*/
+    width: 238px;
+    height: auto;
 }
 
 /* ------------------------ TWEETS ------------------------ */
@@ -214,6 +293,7 @@ h3{
 .tweet_pollution,
 .tweet_solutions{
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .tweet_element h2{
@@ -256,10 +336,11 @@ h3{
 }
 
 
-/* ------------------------ VIDEO ------------------------ */
-.article article iframe{
-    max-width: 100%;
-
+/* ------------------------ VIDEO & PHOTOS ------------------------ */
+.article02>article>img{
+    width: 551px;
+    height: auto;
+    max-width: none;
 }
 
 /* ------------------------ FOOTER ------------------------ */
@@ -288,7 +369,7 @@ footer{
 .footer_droite p:nth-of-type(1){
     display: inline-block;
     margin: 0;
-    padding: 0 3.5em 0 1em;
+    padding: 0 1.5em 0 1em;
     border: 1px solid #E6D5D0;
     border-radius: 0.2em;
 }
@@ -313,4 +394,5 @@ footer>p{
 footer h4{
     color: #BA5050;
     font-size: 0.8em;
+    margin-left: 0;
 }
