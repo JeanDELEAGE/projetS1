@@ -1,16 +1,15 @@
 
-/*img {*/
-/*    box-sizing: border-box;*/
-/*    -moz-box-sizing: border-box;*/
-/*    width:100%;*/
-/*    height:auto;*/
-/*    padding: 1rem 0 1rem 0;*/
-/*    background-color: #FFF;*/
-/*}*/
-
 html{
     overflow-x: hidden;
 }
+/* ------------------------ ACCUEIL INTRO ------------------------ */
+.introduction{
+    background-image: url("../../img/images_illustrations/visuels/feuillerouge.png");
+    background-size: cover;
+    background-position: center center;
+    padding-right: 77px;
+}
+
 /* ------------------------ ENTETE - FIL ARIANNE ------------------------ */
 .accueil header{
     margin-top: 2.4em;
@@ -39,11 +38,12 @@ html{
 }
 
 .article04 header{
-    background-image: url("../../img/images_illustrations/images_her/her_article_01.jpg") ;
+    background-image: url("../../img/images_illustrations/visuels/shibuya-Fond.png") ;
 }
 
 .article05 header{
-    background-image: url("../../img/images_illustrations/images_her/her_article_01.jpg") ;
+    background-image: url("../../img/illustrations/design_perso/autres_projets/Fond.png") ;
+    background-size: 870px;
 }
 
 .fil-arianne p:first-of-type:before{
@@ -107,25 +107,6 @@ footer:before{
     margin: 0;
 }
 
-
-/* ------------------------ INTRODUCTION ------------------------ */
-
-/*.accueil>article{*/
-/*    background-image: url("../../img/images_illustrations/visuels/feuillerouge02.png");*/
-/*    background-position: right center;*/
-/*    background-size: contain;*/
-/*    background-repeat: no-repeat;*/
-
-/*}*/
-
-.accueil>article img{
-    float: right;
-    height: 361px;
-    width: auto;
-}
-
-
-
 /* ------------------------ TABLE DES MATIERES ------------------------ */
 .table-des-matieres{
     background-image: url("../../img/illustrations/design_perso/articles/article_01/tracé_article_02.svg");
@@ -179,6 +160,12 @@ footer:before{
     margin: 0 auto 1em;
 }
 
+.article03>article>p:first-of-type:after{
+   content: url("../../img/illustrations/design_perso/articles/article_02/Illustration02.png");
+    background-position: -5%;
+
+}
+
 .emphase01{
     display: block;
     text-align: center;
@@ -223,33 +210,33 @@ footer:before{
 .flex{
     display: inline-flex;
     flex-wrap: wrap;
+    flex: auto;
+
 }
 
-.flex p{
+.element-flex{
     flex-basis: 50%;
 }
-
-/*.element-flex{*/
-/*    flex: auto;*/
-/*}*/
 
 .flex-img{
     width: 268px;
     height: auto;
-    border-radius: 60px;
+}
+.flex-img02{
+    width: 105px;
+    height: auto;
 }
 
-.flex-img:nth-of-type(1){
-    position: absolute;
-    right: -105px;
-}
+/*.flex-img:nth-of-type(1){*/
+/*    position: absolute;*/
+/*    right: -105px;*/
+/*}*/
+
 
 .flex-img:nth-of-type(2){
-    /*position: absolute;*/
-    /*left: -105px;*/
-    /*top: 105px;*/
-    width: 238px;
+    width: 155px;
     height: auto;
+
 }
 
 /* ------------------------ TWEETS ------------------------ */
@@ -366,21 +353,28 @@ footer{
     padding-right: 1em;
 }
 
-.footer_droite p:nth-of-type(1){
+#mailfooter{
+    background-color: transparent;
+    border-color: #707070;
+    width: 110px;
+    height: 30px;
     display: inline-block;
-    margin: 0;
-    padding: 0 1.5em 0 1em;
-    border: 1px solid #E6D5D0;
-    border-radius: 0.2em;
+}
+.button-footer>button{
+    border-radius: 0.5em;
+    color: #FEFEFE;
+    font-size: 16px;
+    font-family: "Poppins Medium", sans-serif;
+    text-align: center;
+    height: 35px;
+    width: 85px;
+    background: #BA5050;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.20);
+    display: inline-block;
 }
 
-.footer_droite p:nth-of-type(2){
-    display: inline-block;
-    margin: 0;
-    padding: 0 0.5em;
-    color: white;
-    background-color: #BA5050;
-    border-radius: 0.2em;
+.footer_droite>ul{
+    display: table-cell;
 }
 
 
@@ -395,4 +389,53 @@ footer h4{
     color: #BA5050;
     font-size: 0.8em;
     margin-left: 0;
+}
+
+/* ------------------------ AUTRES PROJETS ------------------------ */
+
+.projet{
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    horiz-align: center;
+}
+
+.projet img{
+    width: 100px;
+    height: auto;
+    padding: 20px;
+}
+
+.projet p,
+.projet h4{
+    text-align: center;
+}
+
+.projet p{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.projet h4{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.projet li:nth-child(odd){
+    margin-top: 2em;
+    width: 50vw;
+}
+
+.projet li:nth-child(3n+1){
+    background-color: #E6D5D0;
+}
+
+.projet li:nth-child(4n+1){
+    background-color: #E6D5D0;
+}
+
+.projet li{
+    margin-bottom: 2em;
 }

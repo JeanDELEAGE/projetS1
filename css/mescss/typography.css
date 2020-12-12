@@ -198,3 +198,14 @@ header{
     text-align: center;
 }
 
+/* ------------------------ INTERVIEW ------------------------ */
+
+.article04>article>h3:nth-of-type(2),
+.article04>article>h3:nth-of-type(3){
+    text-transform: uppercase;
+    border: 0.01px solid #707070;
+    text-align: center;
+    letter-spacing: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}

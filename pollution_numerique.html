@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/lib/normalize.css">
+    <link rel="stylesheet" href="css/lib/formulaire.css">
     <link rel="stylesheet" href="css/mescss/typography.css">
     <link rel="stylesheet" href="css/mescss/menu.css">
     <link rel="stylesheet" href="css/mescss/mise-en-page.css">
@@ -42,6 +43,7 @@
     <p>Temps de lecture : 5'</p>
 </div>
 
+<!--------------------------------- INTRODUCTION --------------------------------->
 <article>
     <h3>Pollution numérique, notre enjeu</h3>
     <p>Aujourd’hui, la pollution numérique n’est plus un mythe, c’est une réalité problématique qui relève du
@@ -179,20 +181,30 @@
 <footer>
     <div class="footer-gauche">
         <h4>Retrouvez-nous ici</h4>
-        <a href="https://www.instagram.com/mmi_montbeliard/"><img src="img/images_interface/logo/instagram.svg"
-                                                                  alt="Instagram"></a>
+        <ul>
+            <li><a href="https://www.instagram.com/mmi_montbeliard/"><img src="img/images_interface/logo/instagram.svg"
+                                                                          alt="Instagram"></a>
 
-        <a href="https://www.facebook.com/mmimontbeliard"><img src="img/images_interface/logo/fb.svg"
-                                                               alt="Facebook"></a>
+                <a href="https://www.facebook.com/mmimontbeliard"><img src="img/images_interface/logo/fb.svg"
+                                                                       alt="Facebook"></a></li>
+        </ul>
     </div>
 
     <div class="footer_droite">
         <h4>Restons en contact</h4>
-        <p>email</p>
-        <p>envoyer</p>
+        <ul>
+            <li>
+                <input type="email" id="mailfooter" name="user_mail">
+            </li>
+
+            <li class="button-footer">
+                <button type="submit">Envoyer</button>
+            </li>
+
+        </ul>
     </div>
     <p>Projet réalisé dans le cadre d’une expérience pédagogique au département MMI de Montbéliard.</p>
 </footer>
-</body>
 
+</body>
 </html>

@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/lib/normalize.css">
+    <link rel="stylesheet" href="css/lib/formulaire.css">
     <link rel="stylesheet" href="css/mescss/typography.css">
     <link rel="stylesheet" href="css/mescss/menu.css">
     <link rel="stylesheet" href="css/mescss/mise-en-page.css">
@@ -48,7 +49,6 @@
         second, plus difficile mais accessible. Rassurez-vous, il existe des solutions pour polluer moins, il faut
         simplement consommer moins et mieux.
     </p>
-    <img src="img/illustrations/design_perso/articles/article_02/Illustration02.png" alt="">
     <p class="legende-img">Consommer moins, agir plus</p>
 </article>
 
@@ -86,7 +86,7 @@
         <img class="flex-img" src="img/images_illustrations/visuels/feuille2.png" alt="leaf">
 
         <img class="flex-img" src="img/images_illustrations/visuels/branche.png" alt="tree">
-        <p class="element-flex flex-img">Chacun doit agir pour que ce monde du numérique, devienne plus juste et
+        <p class="element-flex">Chacun doit agir pour que ce monde du numérique, devienne plus juste et
             responsable.
         </p>
 
@@ -133,7 +133,7 @@
                 cet «
                 effet rebond».
             </p>
-            <img class="flex-img" src="img/images_illustrations/visuels/feuille2.png" alt="leaf">
+            <img class="flex-img" src="img/illustrations/stories/transfert_données.jpg" alt="leaf">
         </div>
 
         <div class="element-flex">
@@ -141,7 +141,7 @@
             <p>Optimiser son utilisation des plateformes de streaming
                 Regarder des vidéos en basse résolution et favoriser le téléchargement au streaming.
             </p>
-            <img class="flex-img" src="img/images_illustrations/visuels/feuille2.png" alt="leaf">
+            <img class="flex-img" src="img/illustrations/stories/media.png" alt="leaf">
         </div>
     </div>
     <p>L’écoute de musique sur YouTube consomme bien plus qu’une simple musique écouté sur Spotify, Deezer… Éviter la 4G
@@ -219,17 +219,27 @@
 <footer>
     <div class="footer-gauche">
         <h4>Retrouvez-nous ici</h4>
-        <a href="https://www.instagram.com/mmi_montbeliard/"><img src="img/images_interface/logo/instagram.svg"
-                                                                  alt="Instagram"></a>
+        <ul>
+            <li><a href="https://www.instagram.com/mmi_montbeliard/"><img src="img/images_interface/logo/instagram.svg"
+                                                                          alt="Instagram"></a>
 
-        <a href="https://www.facebook.com/mmimontbeliard"><img src="img/images_interface/logo/fb.svg"
-                                                               alt="Facebook"></a>
+                <a href="https://www.facebook.com/mmimontbeliard"><img src="img/images_interface/logo/fb.svg"
+                                                                       alt="Facebook"></a></li>
+        </ul>
     </div>
 
     <div class="footer_droite">
         <h4>Restons en contact</h4>
-        <p>email</p>
-        <p>envoyer</p>
+        <ul>
+            <li>
+                <input type="email" id="mailfooter" name="user_mail">
+            </li>
+
+            <li class="button-footer">
+                <button type="submit">Envoyer</button>
+            </li>
+
+        </ul>
     </div>
     <p>Projet réalisé dans le cadre d’une expérience pédagogique au département MMI de Montbéliard.</p>
 </footer>

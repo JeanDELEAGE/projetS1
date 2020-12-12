@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/lib/normalize.css">
+    <link rel="stylesheet" href="css/lib/formulaire.css">
     <link rel="stylesheet" href="css/mescss/typography.css">
     <link rel="stylesheet" href="css/mescss/menu.css">
     <link rel="stylesheet" href="css/mescss/mise-en-page.css">
@@ -42,16 +43,23 @@
 </header>
 
 <article>
-    <h3>Pollution numérique</h3>
-    <p>La pollution numérique est un enjeu aussi écologique qu’économique qui se mesure à échelle mondiale, son impact
-        sur notre quotidien est réel et nous devons en prendre conscience pour agir. Si aujourd’hui nos comportements
-        vont à l’encontre d’un bon-sens écologique, c’est dû à notre méconnaissance sur ce sujet. Un sujet qui
-        questionne nos habitudes, remet en cause notre vision du monde numérique et soulève des débats controversés.</p>
-    <img src="img/images_illustrations/visuels/feuillerouge02.png" alt="red-pollution">
+        <h3>Pollution numérique</h3>
+    <div class="introduction">
+        <p>La pollution numérique est un enjeu aussi écologique qu’économique qui se mesure à échelle mondiale, son
+            impact
+            sur notre quotidien est réel et nous devons en prendre conscience pour agir. Si aujourd’hui nos
+            comportements
+            vont à l’encontre d’un bon-sens écologique, c’est dû à notre méconnaissance sur ce sujet. Un sujet qui
+            questionne nos habitudes, remet en cause notre vision du monde numérique et soulève des débats
+            controversés.
+        </p>
+<!--        <img class="flex-img01" src="img/images_illustrations/visuels/feuillerouge02.png" alt="red-pollution">-->
+    </div>
+
 </article>
 <img src="img/illustrations/design_perso/accueil/tracé_accueil_02.svg" alt="Tracé-02">
 <img class="nav-bas" src="img/images_interface/navigation/arrow_down.svg" alt="Arrow_down_01">
-<h3>Nos articles sur ce sujet</h3>
+<h3 class="titre-center">Nos articles sur ce sujet</h3>
 <!--------------------------------- TWEET --------------------------------->
 <div class="tweet">
 <div class="tweet_her">
@@ -120,14 +128,27 @@
 <footer>
     <div class="footer-gauche">
         <h4>Retrouvez-nous ici</h4>
-        <a href="https://www.instagram.com/mmi_montbeliard/"><img src="img/images_interface/logo/instagram.svg" alt="Instagram"></a>
-        <a href="https://www.facebook.com/mmimontbeliard"><img src="img/images_interface/logo/fb.svg" alt="Facebook"></a>
+        <ul>
+            <li><a href="https://www.instagram.com/mmi_montbeliard/"><img src="img/images_interface/logo/instagram.svg"
+                                                                          alt="Instagram"></a>
+
+                <a href="https://www.facebook.com/mmimontbeliard"><img src="img/images_interface/logo/fb.svg"
+                                                                       alt="Facebook"></a></li>
+        </ul>
     </div>
 
     <div class="footer_droite">
         <h4>Restons en contact</h4>
-        <p>email</p>
-        <p>envoyer</p>
+        <ul>
+            <li>
+                <input type="email" id="mailfooter" name="user_mail">
+            </li>
+
+            <li class="button-footer">
+                <button type="submit">Envoyer</button>
+            </li>
+
+        </ul>
     </div>
     <p>Projet réalisé dans le cadre d’une expérience pédagogique au département MMI de Montbéliard.</p>
 </footer>

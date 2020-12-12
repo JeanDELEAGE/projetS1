@@ -1,10 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/lib/normalize.css">
+    <link rel="stylesheet" href="css/lib/formulaire.css">
+    <link rel="stylesheet" href="css/mescss/typography.css">
+    <link rel="stylesheet" href="css/mescss/menu.css">
+    <link rel="stylesheet" href="css/mescss/mise-en-page.css">
+    <link rel="stylesheet" href="css/mescss/carousel.css">
+    <title>Rester informé</title>
 </head>
-<body>
+<body class="article04">
 
+<header>
+    <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
+        <div class="nav-toggle-bar"></div>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="her_science-fiction_ou_realite.html">Her", science-fiction ou réalité</a></li>
+            <li><a href="pollution_numerique.html">Pollution numérique, notre enjeu</a></li>
+            <li><a href="nos_solutions.html">Nos solutions</a></li>
+            <li><a href="rester_informer.html">Rester informé</a></li>
+            <li><a href="autres_projets.html">Autres projets</a></li>
+        </ul>
+    </nav>
+    <h1 class="logo02">Opositif</h1>
+    <div class="titre-article02">
+        <h1>Rester</h1>
+        <h1>informé</h1>
+    </div>
+
+</header>
+
+<div class="fil-arianne">
+    <p><span>Accueil ></span> Rester informé </p>
+</div>
+
+<article>
+    <h3>L’essentiel à retenir</h3>
+    <p>Nous devons chacun prendre conscience que la pollution numérique existe, c’est un problème "invisible" qui prend
+        de l’ampleur de jour en jour.
+        Face à des technologies en plein essor, consommer mieux c’est agir dès aujourd’hui pour préserver notre monde de
+        demain. Le film «Her» nous en avertis adroitement, à nous de prendre le relais.
+    </p>
+    <h3>Interview</h3>
+    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/fAs4qKLnRZI" frameborder="0" allow="accelerometer;
+     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="img/illustrations/design_perso/rester_informé/tracé_01.svg" alt="tracé01">
+    <h3>MERCI</h3>
+
+    <div class="form">
+        <form method="post">
+            <ul>
+                <li>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="user_name">
+                </li>
+                <li>
+                    <label for="mail">E-mail *</label>
+                    <i class="fas fa-asterisk" aria-hidden="true"></i>
+                    <input type="email" id="mail" name="user_mail">
+                </li>
+                <li>
+                    <label for="msg">Votre message *</label>
+                    <i class="fas fa-asterisk" aria-hidden="true"></i>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li>
+                    <p><i class="fas fa-asterisk" aria-hidden="true"></i>Champs obligatoires *</p>
+                </li>
+                <li class="button">
+                    <button type="submit">Envoyer</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</article>
+
+
+<!--------------------------------- ARTICLE --------------------------------->
+<main class="article">
+    <p>Nous vous remercions d’avoir visité ce site réalisé dans le cadre d’une expérience pédagogique au département MMI
+        de Montbéliard. </p>
+    <p>Si vous avez appréciez la cohérence de mes propos, n’hésitez pas à me suivre pour rester informé quant à la
+        réalisation d’autres sites.</p>
+</main>
+
+<!--------------------------------- FOOTER --------------------------------->
+<footer>
+    <div class="footer-gauche">
+        <h4>Retrouvez-nous ici</h4>
+        <ul>
+            <li><a href="https://www.instagram.com/mmi_montbeliard/"><img src="img/images_interface/logo/instagram.svg"
+                                                                          alt="Instagram"></a>
+
+                <a href="https://www.facebook.com/mmimontbeliard"><img src="img/images_interface/logo/fb.svg"
+                                                                       alt="Facebook"></a></li>
+        </ul>
+    </div>
+
+    <div class="footer_droite">
+        <h4>Restons en contact</h4>
+        <ul>
+            <li>
+                <input type="email" id="mailfooter" name="user_mail">
+            </li>
+
+            <li class="button-footer">
+                <button type="submit">Envoyer</button>
+            </li>
+
+        </ul>
+    </div>
+    <p>Projet réalisé dans le cadre d’une expérience pédagogique au département MMI de Montbéliard.</p>
+</footer>
 </body>
+
 </html>

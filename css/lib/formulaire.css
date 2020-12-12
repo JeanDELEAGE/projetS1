@@ -1,0 +1,84 @@
+.form{
+    background-image: url("../../img/illustrations/design_perso/rester_informé/MERCI.png");
+    max-width: none;
+    background-position: 27%;
+}
+
+.form>form{
+    margin-left: 1.2em;
+    padding-top: -20px;
+}
+
+form {
+    margin: 5px 0 22px 0;
+    width: 300px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    display: inline-block;
+    font-family: "Poppins Light",sans-serif;
+    text-align: left;
+}
+input{
+    height: 35px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #A92424;
+    color: #BA5050;
+}
+textarea{
+    height: 110px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #A92424;
+    color: #BA5050;
+}
+input:focus,
+textarea:focus {
+    border: 1px solid #A92424;
+}
+li>p{
+    color: #BA5050;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 4px 0 8px 0;
+}
+i{
+    margin-right: 5px;
+    font-size: 10px;
+    color: #BA5050;
+    font-weight: 300;
+}
+.button{
+    padding-left: 180px;
+    height: 35px;
+    width: 150px;
+}
+button {
+    padding: 0 0 4px 0;
+    border: 0;
+    border-radius: 0.5em;
+    color: #FEFEFE;
+    font-size: 16px;
+    font-family: "Poppins Medium", sans-serif;
+    text-align: center;
+    height: 35px;
+    width: 120px;
+    background: #BA5050;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.20);
+}
+button:active{
+    box-shadow: inset -1px -1px 3px rgba(255,255,255,0.01),
+    inset 2px 2px 6px rgba(0,0,0,0.6);
+}
+
