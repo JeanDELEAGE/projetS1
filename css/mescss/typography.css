@@ -84,10 +84,6 @@ body>header>h1:first-of-type{
     padding-bottom: 0;
 }
 
-header{
-    height: 375px;
-}
-
 /* Article autres */
 .titre-article02,
 .titre-article03,

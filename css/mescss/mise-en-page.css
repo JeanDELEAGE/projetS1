@@ -10,9 +10,11 @@ html{
     padding-right: 77px;
 }
 
+
 /* ------------------------ ENTETE - FIL ARIANNE ------------------------ */
-.accueil header{
-    margin-top: 2.4em;
+.accueil>header{
+    background-color: #F8F2F0;
+    padding-top: 1px;
 }
 
 .article01 header,
@@ -52,6 +54,7 @@ html{
 
 }
 
+
 /* ------------------------ LOGO ------------------------ */
 
 .logo01:after{
@@ -73,6 +76,7 @@ html{
 .logo01:before{
     content: url("../../img/illustrations/design_perso/accueil/tracé_accueil_01.svg");
     position: absolute;
+    opacity: 60%;
     top: -1em;
     right: 3em;
     width: 510px;
@@ -87,18 +91,10 @@ html{
     padding: 20px;
 }
 
-footer:before{
-    content: url("../../img/images_interface/navigation/arrow_up.svg");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 150px;
-}
-
 /* ------------------------ TAGLINE ------------------------ */
 .tagline{
     position: absolute;
-    margin: 50px 0 0 20px
+    margin: 50px 0 0 53px
 }
 .tagline h2{
     text-transform: uppercase;
@@ -106,6 +102,7 @@ footer:before{
     text-align: right;
     margin: 0;
 }
+
 
 /* ------------------------ TABLE DES MATIERES ------------------------ */
 .table-des-matieres{
@@ -120,7 +117,7 @@ footer:before{
     display: table-cell;
     vertical-align: top;
     position: absolute;
-    left: -0.9em;
+    left: -1.3em;
     margin-top: 10px;
 }
 
@@ -136,13 +133,24 @@ footer:before{
 .chapter a{
     margin-left: 20px;
     margin-bottom: 30px;
-    padding: 10px 0 17px 10px;
+    padding: 10px 0 17px 52px;
+}
+
+.article01 .puces a{
+    margin-bottom: 40px;
+}
+
+.article02 .puces a{
+    margin-bottom: 15px;
+}
+
+.article03 .puces a{
+    margin-bottom: 30px;
 }
 
 .table-des-matieres a{
     display: block;
 }
-
 
 
 /* ------------------------ VISUELS + LEGENDE CAROUSEL + EMPHASE ------------------------ */
@@ -155,15 +163,16 @@ footer:before{
 }
 
 .article03>.article>img:nth-of-type(3),
-.article03>.article>img:nth-of-type(5){
+.frederic-b{
     display: block;
     margin: 0 auto 1em;
 }
 
-.article03>article>p:first-of-type:after{
-   content: url("../../img/illustrations/design_perso/articles/article_02/Illustration02.png");
-    background-position: -5%;
-
+.article03>article>img{
+    max-width: none;
+    zoom: 120%;
+    margin-left: -60px;
+    margin-top: -80px;
 }
 
 .emphase01{
@@ -197,6 +206,15 @@ footer:before{
     font-family: "Poppins Light", sans-serif;
 }
 
+.article04>article>img:nth-of-type(1){
+    max-width: none;
+    zoom: 100%;
+    margin-top: -160px;
+    margin-bottom: -100px;
+    margin-left: -80px;
+}
+
+
 /* ------------------------ CHAPEAU ------------------------ */
 
 .article02>.article>p:nth-of-type(1)::before{
@@ -206,38 +224,68 @@ footer:before{
     margin: 0 auto;
 }
 
+
 /* ------------------------ FLEX ELEMENT ------------------------ */
 .flex{
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
     flex: auto;
+    padding: 0;
+    margin: 0;
+    horiz-align: center;
+}
 
+.element-flex01-01{
+    width: 165px;
+    height: auto;
+}
+
+.element-flex01-02{
+    width: 250px;
+    height: auto;
+    margin-right: -50px;
 }
 
 .element-flex{
-    flex-basis: 50%;
+    flex-basis: 36%;
+}
+
+.element-flex02{
+    flex-basis: 58%;
+}
+
+.element-flex02 p{
+    margin-right: 0;
 }
 
 .flex-img{
-    width: 268px;
+    width: 190px;
     height: auto;
 }
+
 .flex-img02{
     width: 105px;
     height: auto;
 }
 
-/*.flex-img:nth-of-type(1){*/
-/*    position: absolute;*/
-/*    right: -105px;*/
-/*}*/
-
+.flex-img03{
+    width: 170px;
+    height: auto;
+    margin-right: -33px;
+}
 
 .flex-img:nth-of-type(2){
     width: 155px;
     height: auto;
 
 }
+
+#article-03-03,
+#article-03-04{
+    margin-bottom: 0;
+}
+
 
 /* ------------------------ TWEETS ------------------------ */
 .tweet h3{
@@ -330,18 +378,37 @@ footer:before{
     max-width: none;
 }
 
+video{
+    border-radius: 8px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    display: block;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: #BA5050;
+    object-fit: cover;
+}
+
+
 /* ------------------------ FOOTER ------------------------ */
 footer{
     background-image: url("../../img/illustrations/design_perso/trace_footer01.svg");
     background-repeat: no-repeat;
     background-position: bottom -100px right -125px;
-    padding-top: 40px;
+    padding-top: 180px;
+}
+
+.arrow-up{
+    display: block;
+    margin: 0 auto;
 }
 
 .footer-gauche{
     display: table-cell;
-    padding: 0 1em;
+    padding: 0 0 0 1.2em;
     vertical-align: top;
+    margin-right: 1em;
 }
 
 .footer_gauche a img{
@@ -352,13 +419,16 @@ footer{
     display: table-cell;
     padding-right: 1em;
 }
-
+.footer_droite>ul>li{
+    display: table-cell;
+    padding-right: 1em;
+}
 #mailfooter{
     background-color: transparent;
     border-color: #707070;
-    width: 110px;
+    width: 100px;
     height: 30px;
-    display: inline-block;
+    display: table-cell;
 }
 .button-footer>button{
     border-radius: 0.5em;
@@ -370,13 +440,12 @@ footer{
     width: 85px;
     background: #BA5050;
     box-shadow: 3px 3px 20px rgba(0,0,0,0.20);
-    display: inline-block;
+    display: table-cell;
 }
 
 .footer_droite>ul{
     display: table-cell;
 }
-
 
 footer>p{
     color: #BA5050;
@@ -391,19 +460,21 @@ footer h4{
     margin-left: 0;
 }
 
+
 /* ------------------------ AUTRES PROJETS ------------------------ */
 
 .projet{
     display: flex;
     flex: auto;
     flex-wrap: wrap;
+    align-items: center;
     padding: 0;
     margin: 0;
     horiz-align: center;
 }
 
 .projet img{
-    width: 100px;
+    width: 40vw;
     height: auto;
     padding: 20px;
 }
@@ -425,16 +496,21 @@ footer h4{
 
 .projet li:nth-child(odd){
     margin-top: 2em;
-    width: 50vw;
+    width: 47vw;
 }
 
-.projet li:nth-child(3n+1){
+.projet li:nth-child(1),
+.projet li:nth-child(4),
+.projet li:nth-child(5),
+.projet li:nth-child(8),
+.projet li:nth-child(9),
+.projet li:nth-child(12),
+.projet li:nth-child(13),
+.projet li:nth-child(16),
+.projet li:nth-child(17){
     background-color: #E6D5D0;
 }
 
-.projet li:nth-child(4n+1){
-    background-color: #E6D5D0;
-}
 
 .projet li{
     margin-bottom: 2em;

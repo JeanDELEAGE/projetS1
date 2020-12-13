@@ -46,7 +46,7 @@ input:focus,
 textarea:focus {
     border: 1px solid #A92424;
 }
-li>p{
+.article04 li>p{
     color: #BA5050;
     font-weight: 300;
     font-size: 12px;
