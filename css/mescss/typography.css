@@ -39,6 +39,17 @@ h3{
     align-items: center;
 }
 
+strong{
+    font-weight: 600;
+    font-family: "Poppins ExtraBold",sans-serif;
+}
+
+strong>a{
+    font-weight: 600;
+    font-family: "Poppins ExtraBold",sans-serif;
+    text-decoration: underline;
+}
+
 /* ------------------------ NORMALIZE ------------------------ */
 a{
     text-decoration: none;
@@ -204,4 +215,11 @@ body>header>h1:first-of-type{
     letter-spacing: 1em;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+/* ------------------------ FOOTER ------------------------ */
+
+footer p>a{
+    font-weight: bold;
+    color: #A92424;
 }

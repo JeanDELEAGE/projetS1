@@ -17,6 +17,11 @@ html{
     padding-top: 1px;
 }
 
+header{
+    width: 100vw;
+    height: 375px;
+}
+
 .article01 header,
 .article02 header,
 .article03 header,
@@ -69,8 +74,9 @@ html{
     text-indent: -9999px;
     content: url("../../img/illustrations/design_perso/logo/ACCUEIL - HEADER - Logo.svg");
     position: absolute;
-    top: 0;
-    left: 0.6em;
+    top: 43px;
+    left: 1.6em;
+    z-index: 3;
 }
 
 .logo01:before{
@@ -214,7 +220,6 @@ html{
     margin-left: -80px;
 }
 
-
 /* ------------------------ CHAPEAU ------------------------ */
 
 .article02>.article>p:nth-of-type(1)::before{
@@ -316,7 +321,7 @@ html{
     padding: 5px 5px 5px 44px;
     width: 185px;
     color: white;
-    background-color: #E6D5D0;
+    background-color: #AE958E;
     display: inline-block;
     font-size: 0.7em;
     font-family: "Poppins Light", sans-serif;
@@ -452,6 +457,7 @@ footer>p{
     opacity: 50%;
     font-size: 0.9em;
     margin: 1em 1em 0 1em;
+    padding-bottom: 1em;
 }
 
 footer h4{
@@ -460,6 +466,9 @@ footer h4{
     margin-left: 0;
 }
 
+.footer-gauche h4{
+    margin-bottom: 6px;
+}
 
 /* ------------------------ AUTRES PROJETS ------------------------ */
 
