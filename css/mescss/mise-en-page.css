@@ -4,7 +4,7 @@ html{
 }
 /* ------------------------ ACCUEIL INTRO ------------------------ */
 .introduction{
-    background-image: url("../../img/images_illustrations/visuels/feuillerouge.png");
+    background-image: url("../../img/images_illustrations/visuels/feuillerouge.jpg");
     background-size: cover;
     background-position: center center;
     padding-right: 77px;
@@ -15,6 +15,15 @@ html{
 .accueil>header{
     background-color: #F8F2F0;
     padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+
+
+.fil-arianne:after{
+    content: url("../../img/illustrations/design_perso/rectangle.svg");
+    margin: 1em 0 1em 0;
+    padding-left: 220px;
 }
 
 header{
@@ -37,7 +46,7 @@ header{
 }
 
 .article02 header{
-    background-image: url("../../img/images_illustrations/visuels/suffering-tree.jpeg") ;
+    background-image: url("../../img/images_illustrations/visuels/suffering-tree.jpg") ;
 }
 
 .article03 header{
@@ -117,6 +126,11 @@ header{
     background-position: right center;
     background-repeat: repeat-x;
     margin-bottom: 50px;
+}
+
+.table-des-matieres:before{
+    content: url("../../img/illustrations/design_perso/rectangle.svg");
+    margin: 1em 0 1em 0;
 }
 
 .puces{
@@ -242,14 +256,8 @@ header{
 }
 
 .element-flex01-01{
-    width: 165px;
+    width: 100vw;
     height: auto;
-}
-
-.element-flex01-02{
-    width: 250px;
-    height: auto;
-    margin-right: -50px;
 }
 
 .element-flex{
@@ -321,7 +329,7 @@ header{
     padding: 5px 5px 5px 44px;
     width: 185px;
     color: white;
-    background-color: #AE958E;
+    background-color: #884A3D;
     display: inline-block;
     font-size: 0.7em;
     font-family: "Poppins Light", sans-serif;

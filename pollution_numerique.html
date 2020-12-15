@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/lib/normalize.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/illustrations/design_perso/logo/LOGO.svg">
@@ -17,6 +17,7 @@
 </head>
 <body class="article02">
 
+<!--------------------------------- ENTETE --------------------------------->
 <header>
     <div class="nav-toggle" onclick="document.documentElement.classList.toggle('menu-open')">
         <div class="nav-toggle-bar"></div>
@@ -41,7 +42,7 @@
 </header>
 
 <div class="fil-arianne">
-    <p><span>Accueil ></span> Article : pollution numérique </p>
+    <p><span><a href="index.html">Accueil ></a></span> Article : pollution numérique </p>
     <p>Temps de lecture : 5'</p>
 </div>
 
@@ -202,7 +203,8 @@
         <h4>Restons en contact</h4>
         <ul>
             <li>
-                <input type="email" id="mailfooter" name="user_mail">
+                <label for="mailfooter">
+                </label><input type="email" id="mailfooter" name="user_mail">
             </li>
 
             <li class="button-footer">
